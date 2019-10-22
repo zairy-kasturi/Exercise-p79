@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+void swap(int &num1, int &num2);
+int main()
+{
+	//ask input
+	int num1, num2;
+	cout << "Plz enter first  number : ";
+	cin >> num1;
+	cout << "plz enter second number : ";
+	cin >> num2;
+	//number b4 swap
+	cout << "value for  first number before swap   is : " << num1 << endl;
+	cout << "value for  second number before swap   is : " << num2 << endl;
+
+	//call fx 
+	swap(num1, num2);
+	return 0;
+
+}
+
+void  swap(int &num1, int &num2)
+{
+	//procedur : should create a temp to make swap
+	int temp;
+	temp = num1;
+	num1 = num2;
+	num2 = temp;
+	//output : number after swap
+	cout << "value for  first number after swap   is : " << num1 << endl;
+	cout << "value for  second number after swap is  : " << num2 << endl;
+
+
+}
