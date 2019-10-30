@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+#define gelen 0.264179
+
+void kilometer_per_gallon(double litre, double kilometer);
+int main()
+{
+	double litre, kilometer;
+	cout << "how many litre used : ";
+	cin >> litre;
+	cout << "how far car travelled : ";
+	cin >> kilometer;
+
+	cout << fixed << setprecision(2);
+	kilometer_per_gallon(litre, kilometer);
+
+}
+
+void kilometer_per_gallon(double litre, double kilometer)
+{
+	double result;
+	result = kilometer / (litre / gelen);
+	cout << "The number kilometer per gallon : " << result;
+}
