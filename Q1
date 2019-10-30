@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void star();
+void star2();
+int main()
+{
+	star();
+	cout << "*        Mohd Zairi Bin Abd Ghani           *"  << endl;
+	star2();
+
+}
+
+void star()
+{
+	cout << "*********************************************" << endl;
+	cout << "*                                           *" << endl;
+}
+
+void star2()
+{
+	cout << "*                                           *" << endl;
+	cout << "*********************************************" << endl;
+}
